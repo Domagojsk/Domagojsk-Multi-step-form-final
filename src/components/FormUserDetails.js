@@ -10,7 +10,7 @@ const FormUserDetails = ({ values, handleChange }) => {
   const steps = ['Prvi korak', 'Drugi korak', 'Treći korak'];
   return (
     <>
-      <Box sx={{ width: '100%', margin: '50px' }}>
+      <Box sx={{ width: '100%' }}>
         <Stepper activeStep={0} alternativeLabel>
           {steps.map((label) => (
             <Step key={label}>
@@ -25,7 +25,7 @@ const FormUserDetails = ({ values, handleChange }) => {
 
       <TextField
         id='standard-basic'
-        label='Unesi ime'
+        label='Ime'
         variant='standard'
         onChange={handleChange('ime')}
         defaultValue={values.ime}
@@ -33,7 +33,7 @@ const FormUserDetails = ({ values, handleChange }) => {
       <br />
       <TextField
         id='standard-basic'
-        label='Unesi prezime'
+        label='Prezime'
         variant='standard'
         onChange={handleChange('prezime')}
         defaultValue={values.prezime}
@@ -41,7 +41,7 @@ const FormUserDetails = ({ values, handleChange }) => {
       <br />
       <TextField
         id='standard-basic'
-        label='Unesi email'
+        label='E-mail'
         variant='standard'
         onChange={handleChange('email')}
         defaultValue={values.email}

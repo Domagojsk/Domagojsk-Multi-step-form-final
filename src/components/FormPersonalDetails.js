@@ -10,7 +10,7 @@ const FormPersonalDetails = ({ values, handleChange }) => {
   const steps = ['Prvi korak', 'Drugi korak', 'Treći korak'];
   return (
     <>
-      <Box sx={{ width: '100%', margin: '50px' }}>
+      <Box sx={{ width: '100%' }}>
         <Stepper activeStep={1} alternativeLabel>
           {steps.map((label) => (
             <Step key={label}>
@@ -24,7 +24,7 @@ const FormPersonalDetails = ({ values, handleChange }) => {
       </Typography>
       <TextField
         id='standard-basic'
-        label='Vase zanimnje'
+        label='Zanimnje'
         variant='standard'
         onChange={handleChange('zanimanje')}
         defaultValue={values.zanimanje}

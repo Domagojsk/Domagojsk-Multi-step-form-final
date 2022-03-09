@@ -1,13 +1,19 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   outline: 0;
-}
+  box-sizing: border-box;
+} */
 
 .App {
   text-align: center;
 }
 
 .btn {
-  margin: 20px 10px !important;
+  margin: 20px 5px !important;
+}
+
+.MuiListItemText-secondary {
+  font-size: 1.2rem !important;
+  color: #1565c0 !important;
 }
