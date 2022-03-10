@@ -18,7 +18,7 @@ const UserForm = () => {
   });
 
   const getSteps = () => {
-    return ['Welcome', 'User Details', 'Biography', 'Confirm'];
+    return ['Form User Details', 'Form Personal Details', 'Confirm', 'Success'];
   };
 
   const step = getSteps();

@@ -13,7 +13,7 @@ const Confirm = ({ values }) => {
   const steps = ['Prvi korak', 'Drugi korak', 'Treći korak'];
   return (
     <>
-      <Box sx={{ width: '100%' }}>
+      <Box sx={{ width: '100%', my: '2rem' }}>
         <Stepper activeStep={2} alternativeLabel>
           {steps.map((label) => (
             <Step key={label}>
@@ -22,7 +22,12 @@ const Confirm = ({ values }) => {
           ))}
         </Stepper>
       </Box>
-      <Typography variant='h6' color='inherit' component='div'>
+      <Typography
+        sx={{ my: '10px' }}
+        variant='h6'
+        color='inherit'
+        component='div'
+      >
         Pregled unesenih podataka
       </Typography>
       <Grid
@@ -33,22 +38,46 @@ const Confirm = ({ values }) => {
       >
         <List>
           <ListItem>
-            <ListItemText primary='Ime:' secondary={values.ime} />
+            <ListItemText
+              className='confirm-text'
+              primary='Ime:'
+              secondary={values.ime}
+            />
           </ListItem>
           <ListItem>
-            <ListItemText primary='Prezime:' secondary={values.prezime} />
+            <ListItemText
+              className='confirm-text'
+              primary='Prezime:'
+              secondary={values.prezime}
+            />
           </ListItem>
           <ListItem>
-            <ListItemText primary='E-mail:' secondary={values.email} />
+            <ListItemText
+              className='confirm-text'
+              primary='E-mail:'
+              secondary={values.email}
+            />
           </ListItem>
           <ListItem>
-            <ListItemText primary='Zanimanje:' secondary={values.zanimanje} />
+            <ListItemText
+              className='confirm-text'
+              primary='Zanimanje:'
+              secondary={values.zanimanje}
+            />
           </ListItem>
           <ListItem>
-            <ListItemText primary='Grad:' secondary={values.grad} />
+            <ListItemText
+              className='confirm-text'
+              primary='Grad:'
+              secondary={values.grad}
+            />
           </ListItem>
           <ListItem>
-            <ListItemText primary='Drzava:' secondary={values.drzava} />
+            <ListItemText
+              className='confirm-text'
+              primary='Drzava:'
+              secondary={values.drzava}
+            />
           </ListItem>
         </List>
       </Grid>
